@@ -20,14 +20,17 @@
   }
 
   img {
+    border-radius: 50%;
+  }
+
+  table img {
     width: 80px;
     height: 80px;
-    border-radius: 50%;
   }
 </style>
 
 <h1>Employee list</h1>
-
+<p>{{title}}</p>
 <!--<ul *ngIf="data$ | async as data; else empty">-->
 <!--  <li *ngFor="let employee of data">{{ employee.id }}: {{ employee.name }}</li>-->
 <!--</ul>-->
