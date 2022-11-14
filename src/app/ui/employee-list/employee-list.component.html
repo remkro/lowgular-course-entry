@@ -18,6 +18,12 @@
   td {
     padding:15px;
   }
+
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
 </style>
 
 <h1>Employee list</h1>
@@ -31,11 +37,13 @@
     <th>ID</th>
     <th>First name</th>
     <th>E-mail</th>
+    <th>Picture</th>
   </tr>
   <tr *ngFor="let employee of data">
     <td>{{ employee.id }}</td>
     <td>{{ employee.name}}</td>
     <td>{{ employee.email}}</td>
+    <td><img src="{{employee.image}}"></td>
   </tr>
 </table>
 
