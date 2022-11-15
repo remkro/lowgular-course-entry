@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 import { Observable } from 'rxjs';
 import { EmployeeService } from '../../services/employee.service';
-import { EmployeeModel } from '../../model/employee.model';
+import {PersonModel} from "../../model/person.model";
 
 @Component({
   selector: 'employees-faces',
@@ -13,5 +13,5 @@ export class EmployeesFacesComponent {
   constructor(private _employeeService: EmployeeService) {
   }
   title: string = 'Just look how beautiful and smart they are';
-  data$: Observable<EmployeeModel[] | null> = this._employeeService.getAll();
+  data$: Observable<PersonModel[] | null> = this._employeeService.getAll();
 }

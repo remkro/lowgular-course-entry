@@ -1,7 +1,7 @@
 <h2>Faces of employees</h2>
 <p>{{title}}</p>
 <div *ngFor="let employee of data$ | async" style="display: inline-block; text-align: center; font-size:24px;">
-<img [src]="employee.image" style="width:200px; height:200px; margin:25px;">
+<img [src]="employee.img" style="width:200px; height:200px; margin:25px;">
 <br>
   {{employee.name}}
 </div>

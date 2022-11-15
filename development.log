@@ -4097,3 +4097,430 @@
 	"level": "info",
 	"message": "[API] Response ok: injectable/inject"
 }
+[info] [API] Request for flow/create-entity: {
+	"action": "flow/create-entity",
+	"params": {},
+	"context": {
+		"workspace": {
+			"rootPath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "PtjjJbmpsH",
+			"correlationId": "W7A91eQVnI",
+			"clickedPath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/model",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for flow/create-entity"
+}
+[info] [CLI] Calling Query flow/create-entity: {
+	"funcParams": {},
+	"level": "info",
+	"message": "[CLI] Calling Query flow/create-entity"
+}
+[info] [CLI] Called Query flow/create-entity: {
+	"result": {
+		"context": {
+			"project": {
+				"name": "lowgular-course-entry",
+				"workspaceRoot": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry",
+				"root": "",
+				"sourceRoot": "src",
+				"prefix": "app",
+				"codePathFromWorkspaceRoot": "src/app",
+				"absoluteCodePath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app",
+				"absoluteRootPath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry",
+				"rootRoutingFilePath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/app-routing.module.ts",
+				"type": "App"
+			}
+		},
+		"steps": [
+			{
+				"contextId": "entity",
+				"title": "What do you want to create?",
+				"type": "multi-option",
+				"options": {
+					"App": [
+						{
+							"id": "component",
+							"suffix": "Component",
+							"folder": "ui/$name$",
+							"type": "ANGULAR_COMPONENT",
+							"insideOf": "App",
+							"config": {
+								"stylesExtension": "none",
+								"viewEncapsulation": "Emulated",
+								"selector": "generated",
+								"changeDetectionStrategy": "OnPush"
+							}
+						},
+						{
+							"id": "dataService",
+							"suffix": "Service",
+							"folder": "services",
+							"type": "ANGULAR_SERVICE",
+							"insideOf": "App"
+						},
+						{
+							"id": "model",
+							"suffix": "Model",
+							"folder": "model",
+							"type": "DATA_STRUCTURE",
+							"insideOf": "App"
+						},
+						{
+							"id": "response",
+							"suffix": "Response",
+							"folder": "services",
+							"type": "DATA_STRUCTURE",
+							"insideOf": "App"
+						}
+					],
+					"Lib": []
+				},
+				"param": "project.type",
+				"property": "id"
+			},
+			{
+				"contextId": "name",
+				"title": "What is the $entity.id$ name?",
+				"subtitle": "e.g. user",
+				"type": "text-input"
+			},
+			{
+				"conditions": [
+					{
+						"left": "entity.type",
+						"operator": "eq",
+						"right": "DATA_STRUCTURE"
+					},
+					{
+						"left": "entity.type",
+						"operator": "eq",
+						"right": "OBJECT"
+					}
+				],
+				"contextId": "properties",
+				"title": "What are the $entity.id$ properties?",
+				"subtitle": "Optional: Can be empty... or use csv format e.g. id:number,text:string",
+				"type": "multi-input"
+			}
+		],
+		"request": {
+			"scope": "entity.type",
+			"config": {
+				"LIBRARY": {
+					"url": "library/create",
+					"payload": {
+						"name": "name.value"
+					}
+				},
+				"OBJECT": {
+					"url": "object/create",
+					"payload": {
+						"name": "name.value",
+						"properties": "properties",
+						"entityId": "entity.id"
+					}
+				},
+				"DATA_STRUCTURE": {
+					"url": "data-structure/create",
+					"payload": {
+						"name": "name.value",
+						"properties": "properties",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_COMPONENT": {
+					"url": "angular-component/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_DIRECTIVE": {
+					"url": "angular-directive/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_GUARD": {
+					"url": "angular-guard/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_RESOLVER": {
+					"url": "angular-resolver/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_SERVICE": {
+					"url": "angular-service/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ABSTRACTION": {
+					"url": "abstraction/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				}
+			}
+		}
+	},
+	"level": "info",
+	"message": "[CLI] Called Query flow/create-entity"
+}
+[info] [API] Response ok: flow/create-entity: {
+	"result": {
+		"context": {
+			"project": {
+				"name": "lowgular-course-entry",
+				"workspaceRoot": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry",
+				"root": "",
+				"sourceRoot": "src",
+				"prefix": "app",
+				"codePathFromWorkspaceRoot": "src/app",
+				"absoluteCodePath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app",
+				"absoluteRootPath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry",
+				"rootRoutingFilePath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/app-routing.module.ts",
+				"type": "App"
+			}
+		},
+		"steps": [
+			{
+				"contextId": "entity",
+				"title": "What do you want to create?",
+				"type": "multi-option",
+				"options": {
+					"App": [
+						{
+							"id": "component",
+							"suffix": "Component",
+							"folder": "ui/$name$",
+							"type": "ANGULAR_COMPONENT",
+							"insideOf": "App",
+							"config": {
+								"stylesExtension": "none",
+								"viewEncapsulation": "Emulated",
+								"selector": "generated",
+								"changeDetectionStrategy": "OnPush"
+							}
+						},
+						{
+							"id": "dataService",
+							"suffix": "Service",
+							"folder": "services",
+							"type": "ANGULAR_SERVICE",
+							"insideOf": "App"
+						},
+						{
+							"id": "model",
+							"suffix": "Model",
+							"folder": "model",
+							"type": "DATA_STRUCTURE",
+							"insideOf": "App"
+						},
+						{
+							"id": "response",
+							"suffix": "Response",
+							"folder": "services",
+							"type": "DATA_STRUCTURE",
+							"insideOf": "App"
+						}
+					],
+					"Lib": []
+				},
+				"param": "project.type",
+				"property": "id"
+			},
+			{
+				"contextId": "name",
+				"title": "What is the $entity.id$ name?",
+				"subtitle": "e.g. user",
+				"type": "text-input"
+			},
+			{
+				"conditions": [
+					{
+						"left": "entity.type",
+						"operator": "eq",
+						"right": "DATA_STRUCTURE"
+					},
+					{
+						"left": "entity.type",
+						"operator": "eq",
+						"right": "OBJECT"
+					}
+				],
+				"contextId": "properties",
+				"title": "What are the $entity.id$ properties?",
+				"subtitle": "Optional: Can be empty... or use csv format e.g. id:number,text:string",
+				"type": "multi-input"
+			}
+		],
+		"request": {
+			"scope": "entity.type",
+			"config": {
+				"LIBRARY": {
+					"url": "library/create",
+					"payload": {
+						"name": "name.value"
+					}
+				},
+				"OBJECT": {
+					"url": "object/create",
+					"payload": {
+						"name": "name.value",
+						"properties": "properties",
+						"entityId": "entity.id"
+					}
+				},
+				"DATA_STRUCTURE": {
+					"url": "data-structure/create",
+					"payload": {
+						"name": "name.value",
+						"properties": "properties",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_COMPONENT": {
+					"url": "angular-component/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_DIRECTIVE": {
+					"url": "angular-directive/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_GUARD": {
+					"url": "angular-guard/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_RESOLVER": {
+					"url": "angular-resolver/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_SERVICE": {
+					"url": "angular-service/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ABSTRACTION": {
+					"url": "abstraction/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				}
+			}
+		}
+	},
+	"level": "info",
+	"message": "[API] Response ok: flow/create-entity"
+}
+[info] [API] Request for data-structure/create: {
+	"action": "data-structure/create",
+	"params": {
+		"name": "Person",
+		"properties": {
+			"personalNumber": "string",
+			"name": "string",
+			"mail": "string",
+			"img": "string"
+		},
+		"entityId": "model"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "PtjjJbmpsH",
+			"correlationId": "W7A91eQVnI",
+			"clickedPath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/model",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for data-structure/create"
+}
+[info] [CLI] Calling Command data-structure/create: {
+	"funcParams": {
+		"name": "Person",
+		"properties": {
+			"personalNumber": "string",
+			"name": "string",
+			"mail": "string",
+			"img": "string"
+		},
+		"entityId": "model"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Command data-structure/create"
+}
+[info] [CommandBus]: Dispatching command CREATE_DATA_STRUCTURE: {
+	"commandName": "CREATE_DATA_STRUCTURE",
+	"payload": {
+		"folderPath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/model",
+		"name": "Person",
+		"suffix": "Model",
+		"properties": {
+			"personalNumber": "string",
+			"name": "string",
+			"mail": "string",
+			"img": "string"
+		}
+	},
+	"level": "info",
+	"message": "[CommandBus]: Dispatching command CREATE_DATA_STRUCTURE"
+}
+[info] [CommandBus]: Handled  CREATE_DATA_STRUCTURE: {
+	"commandName": "CREATE_DATA_STRUCTURE",
+	"payload": {
+		"folderPath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/model",
+		"name": "Person",
+		"suffix": "Model",
+		"properties": {
+			"personalNumber": "string",
+			"name": "string",
+			"mail": "string",
+			"img": "string"
+		}
+	},
+	"level": "info",
+	"message": "[CommandBus]: Handled  CREATE_DATA_STRUCTURE"
+}
+[info] [CLI] Called Command data-structure/create: {
+	"message": "[CLI] Called Command data-structure/create",
+	"level": "info"
+}
+[info] [API] Response ok: data-structure/create: {
+	"result": {
+		"filePath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/model/person.model.ts"
+	},
+	"level": "info",
+	"message": "[API] Response ok: data-structure/create"
+}
