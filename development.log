@@ -3798,3 +3798,302 @@
 	"level": "info",
 	"message": "[API] Response ok: injectable/inject"
 }
+[info] [API] Request for entity/actions: {
+	"action": "entity/actions",
+	"params": {
+		"clickedPath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/ui/employees-faces/employees-faces.component.ts",
+		"position": 502
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "PtjjJbmpsH",
+			"correlationId": "gl_FRLziU-",
+			"clickedPath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/ui/employees-faces/employees-faces.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for entity/actions"
+}
+[info] [CLI] Calling Query entity/actions: {
+	"funcParams": {
+		"clickedPath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/ui/employees-faces/employees-faces.component.ts",
+		"position": 502
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query entity/actions"
+}
+[info] [API] Response ok: entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "EmployeesFacesComponent"
+		},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"label": "data$",
+						"children": [
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_MAP",
+								"label": "Map Property",
+								"callPath": [
+									"data$"
+								]
+							},
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_TAP",
+								"label": "Property Side Effect",
+								"callPath": [
+									"data$"
+								]
+							}
+						]
+					},
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[API] Response ok: entity/actions"
+}
+[info] [CLI] Called Query entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "EmployeesFacesComponent"
+		},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"label": "data$",
+						"children": [
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_MAP",
+								"label": "Map Property",
+								"callPath": [
+									"data$"
+								]
+							},
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_TAP",
+								"label": "Property Side Effect",
+								"callPath": [
+									"data$"
+								]
+							}
+						]
+					},
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[CLI] Called Query entity/actions"
+}
+[info] [API] Request for injectable/list: {
+	"action": "injectable/list",
+	"params": {
+		"entityFilePath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/ui/employees-faces/employees-faces.component.ts"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "PtjjJbmpsH",
+			"correlationId": "gl_FRLziU-",
+			"clickedPath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/ui/employees-faces/employees-faces.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for injectable/list"
+}
+[info] [CLI] Calling Query injectable/list: {
+	"funcParams": {
+		"entityFilePath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/ui/employees-faces/employees-faces.component.ts"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query injectable/list"
+}
+[info] [CLI] Called Query injectable/list: {
+	"result": [
+		{
+			"file": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/services/employee.service.ts",
+			"name": "EmployeeService",
+			"type": "ANGULAR_SERVICE",
+			"dataType": "Internal"
+		},
+		{
+			"id": "httpClient",
+			"dataType": "External",
+			"name": "HttpClient",
+			"relatedTypes": {}
+		},
+		{
+			"id": "activatedRoute",
+			"dataType": "External",
+			"name": "ActivatedRoute",
+			"relatedTypes": {}
+		}
+	],
+	"level": "info",
+	"message": "[CLI] Called Query injectable/list"
+}
+[info] [API] Response ok: injectable/list: {
+	"result": [
+		{
+			"file": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/services/employee.service.ts",
+			"name": "EmployeeService",
+			"type": "ANGULAR_SERVICE",
+			"dataType": "Internal"
+		},
+		{
+			"id": "httpClient",
+			"dataType": "External",
+			"name": "HttpClient",
+			"relatedTypes": {}
+		},
+		{
+			"id": "activatedRoute",
+			"dataType": "External",
+			"name": "ActivatedRoute",
+			"relatedTypes": {}
+		}
+	],
+	"level": "info",
+	"message": "[API] Response ok: injectable/list"
+}
+[info] [API] Request for injectable/inject: {
+	"action": "injectable/inject",
+	"params": {
+		"entityFilePath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/ui/employees-faces/employees-faces.component.ts",
+		"injectingPath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/services/employee.service.ts"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "PtjjJbmpsH",
+			"correlationId": "gl_FRLziU-",
+			"clickedPath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/ui/employees-faces/employees-faces.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for injectable/inject"
+}
+[info] [CLI] Calling Command injectable/inject: {
+	"funcParams": {
+		"entityFilePath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/ui/employees-faces/employees-faces.component.ts",
+		"injectingPath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/services/employee.service.ts"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Command injectable/inject"
+}
+[info] [CommandBus]: Dispatching command INJECT_SERVICE_DEPENDENCY: {
+	"commandName": "INJECT_SERVICE_DEPENDENCY",
+	"payload": {
+		"entityFilePath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/ui/employees-faces/employees-faces.component.ts",
+		"injectingFilePath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/services/employee.service.ts"
+	},
+	"level": "info",
+	"message": "[CommandBus]: Dispatching command INJECT_SERVICE_DEPENDENCY"
+}
+[info] [CommandBus]: Handled  INJECT_SERVICE_DEPENDENCY: {
+	"commandName": "INJECT_SERVICE_DEPENDENCY",
+	"payload": {
+		"entityFilePath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/ui/employees-faces/employees-faces.component.ts",
+		"injectingFilePath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/services/employee.service.ts"
+	},
+	"level": "info",
+	"message": "[CommandBus]: Handled  INJECT_SERVICE_DEPENDENCY"
+}
+[info] [CLI] Called Command injectable/inject: {
+	"message": "[CLI] Called Command injectable/inject",
+	"level": "info"
+}
+[info] [API] Response ok: injectable/inject: {
+	"result": {
+		"filePath": "C:/frontend/projekty/lowgular-projects/lowgular-course-entry/src/app/ui/employees-faces/employees-faces.component.ts"
+	},
+	"level": "info",
+	"message": "[API] Response ok: injectable/inject"
+}
