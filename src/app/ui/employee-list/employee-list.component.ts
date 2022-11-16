@@ -14,4 +14,8 @@ export class EmployeeListComponent {
   }
   title: string = 'These are our employees of the month';
   data$: Observable<PersonModel[] | null> = this._employeeService.getAll();
+
+  delete(id: string) {
+    this._employeeService.delete(id).subscribe(x => alert("Employee was successfully removed"));
+  }
 }

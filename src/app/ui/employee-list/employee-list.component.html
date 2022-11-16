@@ -45,12 +45,14 @@
     <th>First name</th>
     <th>E-mail</th>
     <th>Picture</th>
+    <th>Remove button</th>
   </tr>
   <tr *ngFor="let employee of data">
     <td>{{ employee.personalNumber }}</td>
     <td>{{ employee.name}}</td>
     <td>{{ employee.mail}}</td>
     <td><img src="{{employee.img}}"></td>
+    <td><button (click)="delete(employee.personalNumber)">Remove</button></td>
   </tr>
 </table>
 
