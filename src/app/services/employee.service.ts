@@ -13,21 +13,25 @@ export class EmployeeService {
   }
 
   getAll(): Observable<PersonModel[]> {
-    return this._httpClient.get<ApiResponse<EmployeeResponse[]>>(
-      'https://dummy.restapiexample.com/api/v1/employees'
-    ).pipe(
-      map((response:ApiResponse<EmployeeResponse[]>) => {
-        return response.data.map((employeeResponse: EmployeeResponse) => {
-          return {
-            name: employeeResponse.employee_name,
-            personalNumber: employeeResponse.id,
-            img: employeeResponse.profile_image,
-            mail: ''
-          }
-        })
-      })
-    );
+    return this._httpClient.get<PersonModel[]>('assets/data/people.json');
   }
+
+  // getAll(): Observable<PersonModel[]> {
+  //   return this._httpClient.get<ApiResponse<EmployeeResponse[]>>(
+  //     'https://dummy.restapiexample.com/api/v1/employees'
+  //   ).pipe(
+  //     map((response:ApiResponse<EmployeeResponse[]>) => {
+  //       return response.data.map((employeeResponse: EmployeeResponse) => {
+  //         return {
+  //           name: employeeResponse.employee_name,
+  //           personalNumber: employeeResponse.id,
+  //           img: employeeResponse.profile_image,
+  //           mail: ''
+  //         }
+  //       })
+  //     })
+  //   );
+  // }
 
   create(employee: CreateEmployeeModel): Observable<any> {
     return this._httpClient.post('https://dummy.restapiexample.com/api/v1/create', employee);
