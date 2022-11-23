@@ -4,7 +4,8 @@
 <!--  <li *ngFor="let employee of data">{{ employee.id }}: {{ employee.name }}</li>-->
 <!--</ul>-->
 <hr>
-<table class="table" *ngIf="data$ | async as data; else empty">
+<table class="table table-striped align-middle" *ngIf="data$ | async as data; else empty">
+  <thead>
   <tr>
     <th>ID</th>
     <th>First name</th>
@@ -12,6 +13,8 @@
     <th>Picture</th>
     <th>Remove button</th>
   </tr>
+  </thead>
+  <tbody>
   <tr *ngFor="let employee of data">
     <td>{{ employee.personalNumber }}</td>
     <td>{{ employee.name}}</td>
@@ -19,6 +22,7 @@
     <td><img src="{{employee.img}}"></td>
     <td><button (click)="delete(employee.personalNumber)" class="btn btn-md btn-outline-dark">Remove</button></td>
   </tr>
+  </tbody>
 </table>
 
 <ng-template #empty> There is no data </ng-template>

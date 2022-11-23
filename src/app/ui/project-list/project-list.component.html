@@ -1,16 +1,20 @@
 <h2 class="mt-5">Projects list</h2>
 <hr>
-<table class="table">
+<table class="table table-striped align-middle">
+  <thead>
   <tr>
     <th>ID</th>
     <th>Name</th>
     <th>Owner</th>
     <th>Description</th>
   </tr>
+  </thead>
+  <tbody>
   <tr *ngFor="let project of data$ | async">
     <td>{{ project.id }}</td>
     <td>{{ project.name}}</td>
     <td>{{ project.owner}}</td>
     <td>{{ project.description }}</td>
   </tr>
+  </tbody>
 </table>

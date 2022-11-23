@@ -1,6 +1,7 @@
 <h2 class="mt-5">Employees from Dummy API</h2>
 <hr>
-<table *ngIf="data$ | async as data; else empty" class="table">
+<table *ngIf="data$ | async as data; else empty" class="table table-striped align-middle">
+  <thead>
   <tr>
     <th>ID</th>
     <th>Name</th>
@@ -8,6 +9,8 @@
     <th>Picture</th>
     <th>Remove button</th>
   </tr>
+  </thead>
+  <tbody>
   <tr *ngFor="let employee of data">
     <td>{{ employee.personalNumber }}</td>
     <td>{{ employee.name}}</td>
@@ -15,6 +18,7 @@
     <td><img src="{{employee.img}}"></td>
     <td><button (click)="delete(employee.personalNumber)" class="btn btn-md btn-outline-dark">Remove</button></td>
   </tr>
+  </tbody>
 </table>
 
 <ng-template #empty> There is no data </ng-template>
