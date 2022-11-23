@@ -1,5 +1,6 @@
-<h2>Employees from Dummy API</h2>
-<table *ngIf="data$ | async as data; else empty">
+<h2 class="mt-5">Employees from Dummy API</h2>
+<hr>
+<table *ngIf="data$ | async as data; else empty" class="table">
   <tr>
     <th>ID</th>
     <th>Name</th>
@@ -12,7 +13,7 @@
     <td>{{ employee.name}}</td>
     <td>{{ employee.mail}}</td>
     <td><img src="{{employee.img}}"></td>
-    <td><button (click)="delete(employee.personalNumber)">Remove</button></td>
+    <td><button (click)="delete(employee.personalNumber)" class="btn btn-md btn-outline-dark">Remove</button></td>
   </tr>
 </table>
 
