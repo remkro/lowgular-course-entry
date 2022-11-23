@@ -1,6 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
+body {
+  font-family: "Murecho", sans-serif;;
+}
+
+.title {
+  font-weight: 900;
+}
+
 img {
   border-radius: 50%;
 }

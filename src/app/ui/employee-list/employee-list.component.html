@@ -17,7 +17,7 @@
   <tbody>
   <tr *ngFor="let employee of data">
     <td>{{ employee.personalNumber }}</td>
-    <td>{{ employee.name}}</td>
+    <td><a routerLink="/employee-details/{{employee.personalNumber}}/{{employee.name}}">{{ employee.name}}</a></td>
     <td>{{ employee.mail}}</td>
     <td><img src="{{employee.img}}"></td>
     <td><button (click)="delete(employee.personalNumber)" class="btn btn-md btn-outline-dark">Remove</button></td>
