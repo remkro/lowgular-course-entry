@@ -8,8 +8,9 @@ import { EmployeeListComponentModule } from './ui/employee-list/employee-list.co
 import { EmployeeServiceModule } from './services/employee.service-module';
 import { EmployeeFormComponentModule } from './ui/employee-form/employee-form.component-module';
 import { EmployeeDetailsComponentModule } from './ui/employee-details/employee-details.component-module';
+import {EmployeeDummyListComponent} from "./ui/employee-dummy-list/employee-dummy-list.component";
 
-const routes: Routes = [{ path: '', component: HomeComponent }, { path: 'create-employee', component: EmployeeFormComponent }, { path: 'employee-list', component: EmployeeListComponent }, { path: 'employee-details/:id/:name', component: EmployeeDetailsComponent }];
+const routes: Routes = [{ path: '', component: HomeComponent }, { path: 'create-employee', component: EmployeeFormComponent }, { path: 'employee-list', component: EmployeeDummyListComponent }, { path: 'employee-details/:id/:name', component: EmployeeDetailsComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes), EmployeeListComponentModule, EmployeeServiceModule, EmployeeFormComponentModule, EmployeeDetailsComponentModule],

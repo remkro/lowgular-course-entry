@@ -7,7 +7,7 @@
     <th>Name</th>
     <th>E-mail</th>
     <th>Picture</th>
-    <th>Remove button</th>
+    <th>Action buttons</th>
   </tr>
   </thead>
   <tbody>
@@ -16,7 +16,7 @@
     <td>{{ employee.name}}</td>
     <td>{{ employee.mail}}</td>
     <td><img src="{{employee.img}}"></td>
-    <td><button (click)="delete(employee.personalNumber)" class="btn btn-md btn-outline-dark">Remove</button></td>
+    <td><a routerLink="/employee-details/{{employee.personalNumber}}/{{employee.name}}" class="btn btn-outline-primary m-1">View details</a> <button (click)="delete(employee.personalNumber)" class="btn btn-md btn-outline-dark m-1">Remove</button></td>
   </tr>
   </tbody>
 </table>
